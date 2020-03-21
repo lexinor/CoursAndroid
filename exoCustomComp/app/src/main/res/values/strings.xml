@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">exoCustomComp</string>
+    <string name="edit_text_msg">Here you can edit your text</string>
+</resources>
