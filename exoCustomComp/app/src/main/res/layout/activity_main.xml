@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="#b40049"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <com.alessandro.exocustomcomp.customView.CustomComponent
-        android:layout_width="match_parent"
+        android:id="@+id/customView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:src="@android:drawable/star_off"
-        app:text="toto"
-        app:textColor="@color/colorPrimary"
-        tools:ignore="MissingConstraints" />
+        app:src="@android:drawable/btn_dialog"
+        app:text="Custom component 1"
+        app:textColor="#fa8072" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.alessandro.exocustomcomp.customView.CustomComponent
+        android:id="@+id/customView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:src="@android:drawable/btn_star"
+        app:text="Custom component 2"
+        app:textColor="@color/colorPrimary" />
+
+    <com.alessandro.exocustomcomp.customView.CustomComponent
+        android:id="@+id/customView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:text="Custom component 3"
+        app:textColor="@color/colorPrimaryDark" />
+
+</LinearLayout>
